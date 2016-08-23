@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="nstextfield" xml:space="preserve">
+        <code><![CDATA[<TextField hint="${cursor}" text="${cursor}"></TextField>
+${cursor}]]></code>
+        <description><![CDATA[{N} Text Field]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsdock" xml:space="preserve">
+        <code><![CDATA[<DockLayout stretchLastChild="true">
+    <Label dock="top" text="I am on top!"></Label>
+</DockLayout>]]></code>
+        <description><![CDATA[{N} Dock Layout]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_3x3_auto" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="auto, auto, auto" columns="auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 3x3 Automatic Width/Height]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_4x3_auto" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="auto, auto, auto, auto" columns="auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 4x3 Automatic Width/Height]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nslabel" xml:space="preserve">
+        <code><![CDATA[<Label text="${cursor}" textWrap="true"></Label>
+${cursor}]]></code>
+        <description><![CDATA[{N} Label]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsactionbarcustomtitle" xml:space="preserve">
+        <code><![CDATA[<ActionBar>
+    <StackLayout orientation="horizontal"
+                 ios:horizontalAlignment="center"
+                 android:horizontalAlignment="left">
+        <Label text="${cursor}"></Label>
+    </StackLayout>
+    <ActionItem (tap)="${cursor}" ios.position="right">
+        <Button class="${cursor}" text="Right"></Button>
+    </ActionItem>
+</ActionBar>]]></code>
+        <description><![CDATA[{N} Action Bar with Custom Title]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nstextview_non-editable" xml:space="preserve">
+        <code><![CDATA[<TextView text="${cursor}" editable="false"></TextView>
+${cursor}]]></code>
+        <description><![CDATA[{N} Non-Editable TextView]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsloading" xml:space="preserve">
+        <code><![CDATA[<ActivityIndicator width="100" height="100" [busy]=${cursor}"></ActivityIndicator>
+${cursor}]]></code>
+        <description><![CDATA[{N} Activity Indicator]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsborder" xml:space="preserve">
+        <code><![CDATA[<Border borderRadius="${cursor}" borderWidth="${cursor}" borderColor="#000000">
+    ${cursor}
+</Border>]]></code>
+        <description><![CDATA[{N} Border]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsdate" xml:space="preserve">
+        <code><![CDATA[<DatePicker [day]="${cursor}" [month]="${cursor}" [year]="${cursor}"></DatePicker>
+${cursor}]]></code>
+        <description><![CDATA[{N} Date Picker]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nswrap" xml:space="preserve">
+        <code><![CDATA[<WrapLayout orientation="horizontal" itemWidth="${cursor}" itemHeight="${cursor}">
+    ${cursor}
+</WrapLayout>]]></code>
+        <description><![CDATA[{N} Wrap Layout]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsswitch" xml:space="preserve">
+        <code><![CDATA[<Switch [checked]="${cursor}"></Switch>
+${cursor}]]></code>
+        <description><![CDATA[{N} Switch]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nstabview" xml:space="preserve">
+        <code><![CDATA[<TabView #tabView>
+    <TabViewItem title="Tab 1">
+        <Label text="This is Label in Tab 1"></Label>
+    </TabViewItem>
+    <TabViewItem title="Tab 2">
+        <Label text="This is Label in Tab 2"></Label>
+    </TabViewItem>
+</TabView>
+${cursor}]]></code>
+        <description><![CDATA[{N} Tab View]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nssegmentedbar" xml:space="preserve">
+        <code><![CDATA[<SegmentedBar [items]="${cursor}" [(ngModel)]="${cursor}">
+</SegmentedBar>]]></code>
+        <description><![CDATA[{N} Segmented Bar]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsactionbarback" xml:space="preserve">
+        <code><![CDATA[<ActionBar title="Title" icon="${cursor}">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+    <ActionItem (tap)="${cursor}" ios.position="right">
+        <Button class="${cursor}" text="Right" (tap)="${cursor}"></Button>
+    </ActionItem>
+</ActionBar>]]></code>
+        <description><![CDATA[{N} Action Bar with Back]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsprogress" xml:space="preserve">
+        <code><![CDATA[<Progress [value]="${cursor}"></Progress>
+${cursor}]]></code>
+        <description><![CDATA[{N} Progress Bar]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_2x2_auto" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="auto, auto" columns="auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 2x2 Automatic Width/Height]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsstack" xml:space="preserve">
+        <code><![CDATA[<StackLayout>
+    ${cursor}
+</StackLayout>]]></code>
+        <description><![CDATA[{N} Stack Layout]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nslistview" xml:space="preserve">
+        <code><![CDATA[<ListView [items]="source" (loaded)="onLoaded($event)" (itemLoading)="onItemLoading($event)" (itemTap)="onItemTap($event)">
+    <template let-item="item" let-odd="odd" let-even="even">
+        ${cursor}
+    </template>
+</ListView>]]></code>
+        <description><![CDATA[{N} List View]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nslistpicker" xml:space="preserve">
+        <code><![CDATA[<ListPicker [items]="${cursor}" [(ngModel)]="${cursor}"></ListPicker>
+${cursor}]]></code>
+        <description><![CDATA[{N} List Picker]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsimg" xml:space="preserve">
+        <code><![CDATA[<Image src="${cursor}"></Image>
+${cursor}]]></code>
+        <description><![CDATA[{N} Image]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nswebview" xml:space="preserve">
+        <code><![CDATA[<WebView src="someUrl | pathToLocalFile | htmlString"></WebView>
+${cursor}]]></code>
+        <description><![CDATA[{N} Web View]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsscrollview" xml:space="preserve">
+        <code><![CDATA[<ScrollView>
+    ${cursor}
+</ScrollView>]]></code>
+        <description><![CDATA[{N} Scroll View]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nstextview_editable" xml:space="preserve">
+        <code><![CDATA[<TextView hint="${cursor}" text="${cursor}" editable="true"></TextView>
+${cursor}]]></code>
+        <description><![CDATA[{N} Editable TextView]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsslider" xml:space="preserve">
+        <code><![CDATA[<Slider [minValue]="${cursor}" [maxValue]="${cursor}" [value]="${cursor}"></Slider>
+${cursor}]]></code>
+        <description><![CDATA[{N} Slider]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsactionbar" xml:space="preserve">
+        <code><![CDATA[<ActionBar title="Title" icon="${cursor}">
+    <ActionItem (tap)="${cursor}">
+        <Button class="${cursor}" text="Left"></Button>
+    </ActionItem>
+    <ActionItem (tap)="${cursor}" ios.position="right">
+        <Button class="${cursor}" text="Right"></Button>
+    </ActionItem>
+</ActionBar>]]></code>
+        <description><![CDATA[{N} Action Bar]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nstime" xml:space="preserve">
+        <code><![CDATA[<TimePicker [hour]="${cursor}" [minute]="${cursor}"></TimePicker>
+${cursor}]]></code>
+        <description><![CDATA[{N} Time Picker]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="${cursor}" columns="${cursor}">
+    ${cursor}
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsabsolute" xml:space="preserve">
+        <code><![CDATA[<AbsoluteLayout>
+    <Label text="This is Label 1" top="${cursor}" right="${cursor}" bottom="${cursor}" left="${cursor}"></Label>
+    ${cursor}
+</AbsoluteLayout>]]></code>
+        <description><![CDATA[{N} Absolute Layout]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsbtn" xml:space="preserve">
+        <code><![CDATA[<Button text="${cursor}" (tap)="${cursor}"></Button>
+${cursor}]]></code>
+        <description><![CDATA[{N} Button]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nspassword" xml:space="preserve">
+        <code><![CDATA[<TextField hint="Enter your password." text="${cursor}" secure="true"></TextField>
+${cursor}]]></code>
+        <description><![CDATA[{N} Password Field]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_4x4" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="*, *, *, *" columns="*, *, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="0, 3" row="0" col="3"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="1, 3" row="1" col="3"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="2, 3" row="2" col="3"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+    <Label text="3, 3" row="3" col="3"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 4x4]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nssearchbar" xml:space="preserve">
+        <code><![CDATA[<SearchBar id="${1:searchBar}" hint="${2:Search}" text="${cursor}" (clear)="${4:onClear}" (submit)="${5:onSubmit}"></SearchBar>
+${cursor}]]></code>
+        <description><![CDATA[{N} SearchBar]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsstack_horizontal" xml:space="preserve">
+        <code><![CDATA[<StackLayout orientation="horizontal">
+    ${cursor}
+</StackLayout>]]></code>
+        <description><![CDATA[{N} Stack Layout Horizontal]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_2x2" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="*, *" columns="*, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 2x2]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_4x4_auto" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="auto, auto, auto, auto" columns="auto, auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="0, 3" row="0" col="3"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="1, 3" row="1" col="3"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="2, 3" row="2" col="3"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+    <Label text="3, 3" row="3" col="3"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 4x4 Automatic Width/Height]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_4x3" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="*, *, *, *" columns="*, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 4x3]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="nsgrid_3x3" xml:space="preserve">
+        <code><![CDATA[<GridLayout rows="*, *, *" columns="*, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+</GridLayout>]]></code>
+        <description><![CDATA[{N} Grid Layout 3x3]]></description>
+    </codetemplate>
+</codetemplates>
